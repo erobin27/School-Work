@@ -1,0 +1,9 @@
+The purpose of this assignment was 2 Parts
+
+  1.  To make a model to predict what political party a candidate falls under depending 
+  on what policies they voted on.
+  [Classification Model]
+  
+  2.  To predict how many people would ride electric scooters in Washington DC
+  depending on factors like day of the week, season, temperature, etc.
+  [Regression Model]
