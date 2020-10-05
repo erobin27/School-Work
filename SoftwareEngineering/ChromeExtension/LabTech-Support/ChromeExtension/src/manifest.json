@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "X Company Enterprises",
+  "description": "This extension is for  the ITCS  3155 project site",
+  "version": "1.1",
+
+  "browser_action": {
+   "default_icon": "LabTechLogo.png",
+   "default_popup": "appPopup.html"
+  },
+
+  "permissions": [
+   "activeTab"
+  ],
+
+  "web_accessible_resources": [
+    "styling.css",
+    "Font/ApercuPro.ttf"
+  ]
+}

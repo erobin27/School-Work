@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('chrome-extension://__MSG_@@extension_id__/Font/ApercuPro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu Pro-Bold';
+    src: url('chrome-extension://__MSG_@@extension_id__/Font/ApercuPro-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('chrome-extension://__MSG_@@extension_id__/Font/ApercuPro-Mono.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-family: 'Apercu Pro-Bold';
+  font-size: 20px;
+  color: #05386B;
+
+}
+
+title {
+  font-family: ApercuPro;
+  font-size: 40px;
+
+}
+
+body {
+  height: 100px;
+  width: 250px;
+  overflow: hidden;
+  margin: 0;
+  background-color: #EDF5E1;
+}
+html {
+  height: 100px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+button {
+  font-family: 'Apercu Pro-Bold';
+  background-color: #EDF5E1;
+  color: #05386B;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+#QuickReport, #submitButton {
+  text-align: center;
+}
+
+input[type=text], input[type=email], textarea{
+  background-color: #EDF5E1;
+  border: none;
+  border-bottom: 4px solid #8EE4AF;
+  padding: 3px;
+  resize: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background-color: #8EE4AF;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  width: 80%;
+  resize: none;
+}
+
+input[type=button] {
+  font-family: 'Apercu Pro-Bold';
+  background-color: #EDF5E1;
+  color: #05386B;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.placeicons {
+  font-family: "fontawesome"
+}
+
+label {
+  padding-right: 100px;
+  font-family: 'Apercu Pro-Bold';
+  font-size: 14px;
+  color: #05386B;
+}

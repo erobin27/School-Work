@@ -1,0 +1,107 @@
+var $ = function(id) {
+	return document.getElementById(id);
+};
+
+window.onload = function() {
+
+	// add mouseover and mouseout event to each image
+	document.getElementById("images/espresso_info.jpg").onmouseover = mouseOver1;
+	document.getElementById("images/espresso_info.jpg").onmouseout = mouseOut1;
+
+	document.getElementById("images/latte_info.jpg").onmouseover = mouseOver1;
+	document.getElementById("images/latte_info.jpg").onmouseout = mouseOut1;
+
+	document.getElementById("images/cappuccino_info.jpg").onmouseover = mouseOver1;
+	document.getElementById("images/cappuccino_info.jpg").onmouseout = mouseOut1;
+
+	document.getElementById("images/coffee_info.jpg").onmouseover = mouseOver1;
+	document.getElementById("images/coffee_info.jpg").onmouseout = mouseOut1;
+
+	document.getElementById("images/biscotti_info.jpg").onmouseover = mouseOver1;
+	document.getElementById("images/biscotti_info.jpg").onmouseout = mouseOut1;
+
+	document.getElementById("images/scone_info.jpg").onmouseover = mouseOver1;
+	document.getElementById("images/scone_info.jpg").onmouseout = mouseOut1;
+
+
+
+	//add click handler to each image
+	document.getElementById("images/espresso_info.jpg").onclick = mouseClick1;
+	document.getElementById("images/latte_info.jpg").onclick = mouseClick1;
+	document.getElementById("images/cappuccino_info.jpg").onclick = mouseClick1;
+	document.getElementById("images/coffee_info.jpg").onclick = mouseClick1;
+	document.getElementById("images/biscotti_info.jpg").onclick = mouseClick1;
+	document.getElementById("images/scone_info.jpg").onclick = mouseClick1;
+
+	// for click event add item to order and update total
+
+	// display order and total
+
+	// add click event handler for Contact Us button
+	document.getElementById("contact_us").onclick = mouseClickContact;
+	// Bonus
+        // add click event handler for check out button
+    
+		// add click event handler for clear button
+	
+		
+}; // end onload
+
+var original;
+var total = 0.0;
+
+function mouseClickContact() {
+
+	location.href = "contact_us.html";
+
+}
+
+function mouseOver1() {
+	original = this.src;
+
+	this.src = this.id;
+
+}
+function mouseOut1() {
+
+	this.src = original;
+
+}
+
+function mouseClick1() {
+
+	if (this.alt === 'espresso')
+	{
+		document.getElementById("order").innerHTML += "$1.95 - Espresso - Delicious espresso. Wanna try it?";
+		total += 1.95;
+	}
+	else if (this.alt === 'latte')
+	{
+		document.getElementById("order").innerHTML += "$2.95 - Latte - Delicious Latte                     ";
+		total += 2.95;
+	}
+	else if (this.alt === 'cappuccino')
+	{
+		document.getElementById("order").innerHTML += "$3.45 - Capuccino - Del Cappucino                   ";
+		total += 3.45;
+	}
+	else if (this.alt === 'coffee')
+	{
+		document.getElementById("order").innerHTML += "$1.75 - Drip Coffee                                 ";
+		total += 1.75;
+	}
+	else if (this.alt === 'biscotti')
+	{
+		document.getElementById("order").innerHTML += "$1.95 - Biscotti                                    ";
+		total += 1.95;
+	}
+	else if (this.alt === 'scone')
+	{
+		document.getElementById("order").innerHTML += "$2.95 - Scone                                       ";
+		total += 2.95;
+	}
+
+// display order and total
+	document.getElementById("total").innerHTML = "Total: $" + Number(total).toFixed(2);
+
+}
