@@ -7,3 +7,6 @@ The purpose of this assignment was 2 Parts
   2.  To predict how many people would ride electric scooters in Washington DC
   depending on factors like day of the week, season, temperature, etc.
   [Regression Model]
+
+
+If the .ipynb file says something went wrong and does not load then hit reload and it should work.
