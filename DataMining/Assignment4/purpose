@@ -1,1 +1,7 @@
-TBD
+The purpose of this assignment was to implement and understand the pagerank algorithm.
+An algorithm used by Google to rank pages in order of relevance based on how many pages
+link back to the page in question.
+
+"The PageRank algorithm outputs a probability distribution used to represent the likelihood
+that a person randomly clicking on links will arrive at any particular page."
+  -GeeksforGeeks
