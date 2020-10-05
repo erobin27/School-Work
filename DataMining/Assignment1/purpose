@@ -1,1 +1,6 @@
-TBD
+The purpose of this assignment was to get familiar with organizing data using pandas.
+
+The first part was creating a tokenized list of words from the gettysburg address with word counts.
+This is a useful webscraping skill which we go over and use more in later assignments
+
+The second part was familiarizing myself with pandas which I used to organize .csv spreadsheet data.
